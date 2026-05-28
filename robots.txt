@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adttotalcol-star.github.io/ADT/sitemap.xml
+Sitemap: https://adtotalcol-star.github.io/ADT/sitemap.xml

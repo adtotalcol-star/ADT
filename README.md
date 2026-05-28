@@ -4,13 +4,13 @@
 
 ### Sitio web corporativo de servicios digitales
 
-[![Estado](https://img.shields.io/badge/Estado-En_Linea-brightgreen?style=for-the-badge)](https://adttotalcol-star.github.io/ADT/)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://adttotalcol-star.github.io/ADT/)
+[![Estado](https://img.shields.io/badge/Estado-En_Linea-brightgreen?style=for-the-badge)](https://adtotalcol-star.github.io/ADT/)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://adtotalcol-star.github.io/ADT/)
 [![Licencia](https://img.shields.io/badge/Licencia-Privada-lightgrey?style=for-the-badge)](#licencia)
 
 <br>
 
-[![VISITAR SITIO WEB](https://img.shields.io/badge/VISITAR_SITIO_WEB-GitHub_Pages-1B4079?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adttotalcol-star.github.io/ADT/)
+[![VISITAR SITIO WEB](https://img.shields.io/badge/VISITAR_SITIO_WEB-GitHub_Pages-1B4079?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adtotalcol-star.github.io/ADT/)
 
 </div>
 
@@ -109,7 +109,7 @@ http://localhost:8000
 
 ## SEO y Publicacion
 
-- **URL publica:** `https://adttotalcol-star.github.io/ADT/`
+- **URL publica:** `https://adtotalcol-star.github.io/ADT/`
 - **Hosting:** GitHub Pages.
 - **SEO base:** meta descripcion, canonical, Open Graph, Twitter Card, JSON-LD, favicon, `robots.txt` y `sitemap.xml`.
 - **Arquitectura:** sitio sin framework y sin proceso de compilacion.
@@ -124,6 +124,6 @@ http://localhost:8000
 <br>
 <p>Desarrollado para <strong>ADT - Agencia Digitalizadora Total</strong></p>
 <p>
-  <a href="https://adttotalcol-star.github.io/ADT/">Ver sitio web</a>
+  <a href="https://adtotalcol-star.github.io/ADT/">Ver sitio web</a>
 </p>
 </div>
