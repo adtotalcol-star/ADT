@@ -3,7 +3,7 @@
  * Handles service cards interactions, modal details and animations.
  */
 
-const WHATSAPP_NUMBER = '573229135021';
+const WHATSAPP_NUMBER = '573213303645';
 
 const SERVICES = {
   web: {
