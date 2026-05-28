@@ -1,0 +1,216 @@
+/* ========================================
+   ADT - Animations & Effects
+   ======================================== */
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.05); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Animation Classes */
+.animate {
+  animation-duration: var(--transition-slow);
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.animate--fade-in { animation-name: fadeIn; }
+.animate--fade-in-up { animation-name: fadeInUp; }
+.animate--fade-in-left { animation-name: fadeInLeft; }
+.animate--fade-in-right { animation-name: fadeInRight; }
+.animate--scale-in { animation-name: scaleIn; }
+
+.animate--delay-1 { animation-delay: 100ms; }
+.animate--delay-2 { animation-delay: 200ms; }
+.animate--delay-3 { animation-delay: 300ms; }
+.animate--delay-4 { animation-delay: 400ms; }
+.animate--delay-5 { animation-delay: 500ms; }
+
+/* Hover Effects */
+.hover--lift {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hover--lift:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hover--glow {
+  transition: box-shadow var(--transition-base);
+}
+
+.hover--glow:hover {
+  box-shadow: var(--shadow-glow);
+}
+
+.hover--scale {
+  transition: transform var(--transition-base);
+}
+
+.hover--scale:hover {
+  transform: scale(1.03);
+}
+
+/* Loading & Skeleton */
+.skeleton {
+  background: linear-gradient(90deg, 
+    var(--bg-card) 25%, 
+    var(--color-primary-medium) 50%, 
+    var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--border-radius-md);
+}
+
+.skeleton--text {
+  height: 1em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.skeleton--card {
+  height: 200px;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Scroll Animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.scroll-reveal--active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Particle Effect Base */
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--color-highlight);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.particle--small { width: 2px; height: 2px; }
+.particle--large { width: 8px; height: 8px; }
+
+/* Gradient Animation */
+.gradient-animate {
+  background: linear-gradient(-45deg, 
+    var(--color-primary-dark), 
+    var(--color-primary-medium), 
+    var(--color-secondary), 
+    var(--color-accent));
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Text Reveal */
+.text-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-reveal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  animation: textReveal 1s ease forwards;
+}
+
+@keyframes textReveal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Button Ripple */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.btn-ripple:active::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

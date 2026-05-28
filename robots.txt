@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adttotalcol-star.github.io/ADT/sitemap.xml

@@ -1,0 +1,28 @@
+<!--
+  ADT - CTA/Contact Component
+-->
+<section class="section cta" id="contact" aria-labelledby="contact-title">
+  <div class="container cta__content">
+    <h2 class="cta__title" id="contact-title" data-animate="fade-in-up">
+      Listo para transformar tu negocio?
+    </h2>
+
+    <p class="cta__text" data-animate="fade-in-up" data-delay="1">
+      Agenda una consulta gratuita por WhatsApp y cuentanos que necesita tu empresa.
+    </p>
+
+    <form class="form" id="contactForm" data-animate="fade-in-up" data-delay="2" novalidate>
+      <input type="text" name="name" class="form__input" placeholder="Tu nombre *" required aria-label="Nombre">
+      <input type="email" name="email" class="form__input" placeholder="Tu email *" required aria-label="Email">
+      <input type="tel" name="phone" class="form__input" placeholder="Telefono (opcional)" aria-label="Telefono">
+      <textarea name="message" class="form__input" rows="4" placeholder="Cuentanos sobre tu proyecto *" required aria-label="Mensaje"></textarea>
+      <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">Enviar por WhatsApp</button>
+    </form>
+
+    <div style="margin-top: var(--spacing-xl);" data-animate="fade-in" data-delay="3">
+      <p style="color: var(--text-muted); font-size: var(--font-size-sm);">
+        WhatsApp: +57 322 913 5021
+      </p>
+    </div>
+  </div>
+</section>

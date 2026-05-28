@@ -1,0 +1,22 @@
+{
+  "name": "ADT - Agencia Digitalizadora Total",
+  "short_name": "ADT",
+  "description": "Servicios digitales para negocios: diseno web, tiendas online, redes sociales y SEO.",
+  "start_url": "/ADT/",
+  "scope": "/ADT/",
+  "display": "standalone",
+  "background_color": "#f6fbff",
+  "theme_color": "#1B4079",
+  "icons": [
+    {
+      "src": "img/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
